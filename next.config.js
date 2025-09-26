@@ -5,8 +5,20 @@ const nextConfig = {
   images: {
     unoptimized: true
   },
-  env: {
-    CUSTOM_KEY: process.env.CUSTOM_KEY,
+  // Skip API routes during static export
+  exportPathMap: async function (
+    defaultPathMap,
+    { dev, dir, outDir, distDir, buildId }
+  ) {
+    return {
+      '/': { page: '/' },
+      '/privacy': { page: '/privacy' },
+      '/terms': { page: '/terms' },
+    }
+  },
+  // Disable API routes for static export
+  experimental: {
+    missingSuspenseWithCSRBailout: false,
   },
 }
 
