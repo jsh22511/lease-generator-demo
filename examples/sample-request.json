@@ -1,0 +1,62 @@
+{
+  "jurisdiction": {
+    "country": "US",
+    "state": "CA",
+    "city": "San Francisco"
+  },
+  "landlord": {
+    "name": "Josh Kain",
+    "email": "josh@example.com",
+    "address": "123 Main Street, San Francisco, CA 94102"
+  },
+  "tenant": {
+    "name": "Jane Smith",
+    "email": "jane@example.com"
+  },
+  "property": {
+    "address": "456 Oak Avenue, San Francisco, CA 94102",
+    "type": "apartment"
+  },
+  "term": {
+    "startDate": "2024-01-01",
+    "endDate": "2024-12-31",
+    "months": 12,
+    "renewal": "none"
+  },
+  "financials": {
+    "monthlyRent": 2500,
+    "securityDeposit": 2500,
+    "lateFee": {
+      "type": "flat",
+      "value": 50,
+      "graceDays": 5
+    },
+    "prorationMethod": "actual_days",
+    "utilitiesIncluded": ["water", "trash", "sewer"]
+  },
+  "pets": {
+    "allowed": true,
+    "fee": 200,
+    "deposit": 500,
+    "rent": 25,
+    "restrictions": "Maximum 2 pets, no aggressive breeds, must be spayed/neutered"
+  },
+  "rules": {
+    "smoking": "prohibited",
+    "parking": "One assigned parking space in garage",
+    "subletting": "with_consent",
+    "alterations": "with_consent",
+    "insuranceRequired": true
+  },
+  "notices": {
+    "delivery": "both"
+  },
+  "signatures": {
+    "method": "e-sign"
+  },
+  "emailCapture": {
+    "email": "user@example.com",
+    "consent": true
+  },
+  "captchaToken": "mock-captcha-token"
+}
