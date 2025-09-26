@@ -118,7 +118,7 @@ export async function POST(request: NextRequest) {
     const format = 'docx'; // Could be made configurable
     const filename = `lease-${Date.now()}${getDocumentExtension(format)}`;
     
-    return new NextResponse(docxBuffer, {
+return new NextResponse(docxBuffer as any, {
       status: 200,
       headers: {
         'Content-Type': getDocumentMimeType(format),
