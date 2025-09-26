@@ -63,7 +63,7 @@ function ComprehensiveLeaseForm({ onGenerate, isGenerating, result }: Comprehens
     
     // Prepare tenant data
     const tenantData = tenantCount === 1 
-      ? { name: tenantNames[0], email: formData.tenant?.email || '' }
+      ? { name: tenantNames[0], email: '' }
       : tenantNames.map(name => ({ name, email: '' }));
     
     const submitData = {
